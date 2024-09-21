@@ -2,21 +2,21 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    width: 100%;
     margin: 0;
     background-color: cornflowerblue;
+    justify-content: center;
+    align-items: center;
   }
 .header{
-    position: absolute;
     display: flex;
     flex-direction: row;
-
+    align-items: stretch;
     padding: 10px;
     width: 100%;
     background-color: aqua;
 }
 footer {
-    position: relative;
     width: 100%;
     background: #3586ff;
     min-height: 100px;
@@ -29,4 +29,39 @@ footer {
     position: absolute;
     bottom: 0;
   }
-  
+
+  .post-form{
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback-input {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #3586ff;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+  }
+  .post-list{
+    list-style-type: none;
+  }
+  .post-card{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
